@@ -1,0 +1,1537 @@
+[
+  {
+    "type": "ACTION",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "ACTION",
+          "named": true
+        },
+        {
+          "type": "BacktickQuoteLiteral",
+          "named": true
+        },
+        {
+          "type": "DoubleQuoteLiteral",
+          "named": true
+        },
+        {
+          "type": "STRING_LITERAL",
+          "named": true
+        },
+        {
+          "type": "TripleQuoteLiteral",
+          "named": true
+        },
+        {
+          "type": "block_comment",
+          "named": true
+        },
+        {
+          "type": "line_comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ARGUMENT_CONTENT",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "DoubleQuoteLiteral",
+          "named": true
+        },
+        {
+          "type": "STRING_LITERAL",
+          "named": true
+        },
+        {
+          "type": "argActionBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "INT",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "actionBlock",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ACTION",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "actionScopeName",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "actionBlock",
+          "named": true
+        },
+        {
+          "type": "actionScopeName",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "altList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "alternative",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "alternative",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "element",
+          "named": true
+        },
+        {
+          "type": "elementOptions",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "argActionBlock",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "ARGUMENT_CONTENT",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "atom",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "notSet",
+          "named": true
+        },
+        {
+          "type": "ruleref",
+          "named": true
+        },
+        {
+          "type": "terminalDef",
+          "named": true
+        },
+        {
+          "type": "wildcard",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "altList",
+          "named": true
+        },
+        {
+          "type": "optionsSpec",
+          "named": true
+        },
+        {
+          "type": "ruleAction",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "blockSet",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "setElement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "blockSuffix",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ebnfSuffix",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "channelsSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "idList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "characterRange",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "STRING_LITERAL",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "delegateGrammar",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "delegateGrammars",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "delegateGrammar",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ebnf",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "blockSuffix",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ebnfSuffix",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "element",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "actionBlock",
+          "named": true
+        },
+        {
+          "type": "atom",
+          "named": true
+        },
+        {
+          "type": "ebnf",
+          "named": true
+        },
+        {
+          "type": "ebnfSuffix",
+          "named": true
+        },
+        {
+          "type": "labeledElement",
+          "named": true
+        },
+        {
+          "type": "predicateOptions",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "elementOption",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "INT",
+          "named": true
+        },
+        {
+          "type": "STRING_LITERAL",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "qualifiedIdentifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "elementOptions",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "elementOption",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exceptionHandler",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "actionBlock",
+          "named": true
+        },
+        {
+          "type": "argActionBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "finallyClause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "actionBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "grammarDecl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "grammarType",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "grammarSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "grammarDecl",
+          "named": true
+        },
+        {
+          "type": "modeSpec",
+          "named": true
+        },
+        {
+          "type": "prequelConstruct",
+          "named": true
+        },
+        {
+          "type": "rules",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "grammarType",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "idList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "RULE_REF",
+          "named": true
+        },
+        {
+          "type": "TOKEN_REF",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "labeledAlt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "alternative",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "labeledElement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "atom",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerAlt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "lexerCommands",
+          "named": true
+        },
+        {
+          "type": "lexerElements",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerAltList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "lexerAlt",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerAtom",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "LEXER_CHAR_SET",
+          "named": true
+        },
+        {
+          "type": "characterRange",
+          "named": true
+        },
+        {
+          "type": "notSet",
+          "named": true
+        },
+        {
+          "type": "terminalDef",
+          "named": true
+        },
+        {
+          "type": "wildcard",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerBlock",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "lexerAltList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerCommand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "lexerCommandExpr",
+          "named": true
+        },
+        {
+          "type": "lexerCommandName",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerCommandExpr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "INT",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerCommandName",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerCommands",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "lexerCommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerElement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "actionBlock",
+          "named": true
+        },
+        {
+          "type": "ebnfSuffix",
+          "named": true
+        },
+        {
+          "type": "lexerAtom",
+          "named": true
+        },
+        {
+          "type": "lexerBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerElements",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "lexerElement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerRuleBlock",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "lexerAltList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lexerRuleSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_REF",
+          "named": true
+        },
+        {
+          "type": "lexerRuleBlock",
+          "named": true
+        },
+        {
+          "type": "optionsSpec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "localsSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "argActionBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modeSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "lexerRuleSpec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "notSet",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "blockSet",
+          "named": true
+        },
+        {
+          "type": "setElement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "option",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "optionValue",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "optionValue",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ACTION",
+          "named": true
+        },
+        {
+          "type": "INT",
+          "named": true
+        },
+        {
+          "type": "STRING_LITERAL",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "optionsSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "option",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parserRuleSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "RULE_REF",
+          "named": true
+        },
+        {
+          "type": "argActionBlock",
+          "named": true
+        },
+        {
+          "type": "exceptionHandler",
+          "named": true
+        },
+        {
+          "type": "finallyClause",
+          "named": true
+        },
+        {
+          "type": "localsSpec",
+          "named": true
+        },
+        {
+          "type": "ruleBlock",
+          "named": true
+        },
+        {
+          "type": "ruleModifiers",
+          "named": true
+        },
+        {
+          "type": "rulePrequel",
+          "named": true
+        },
+        {
+          "type": "ruleReturns",
+          "named": true
+        },
+        {
+          "type": "throwsSpec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "predicateOption",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "actionBlock",
+          "named": true
+        },
+        {
+          "type": "elementOption",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "predicateOptions",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "predicateOption",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "prequelConstruct",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "action_",
+          "named": true
+        },
+        {
+          "type": "channelsSpec",
+          "named": true
+        },
+        {
+          "type": "delegateGrammars",
+          "named": true
+        },
+        {
+          "type": "optionsSpec",
+          "named": true
+        },
+        {
+          "type": "tokensSpec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "qualifiedIdentifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ruleAction",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "actionBlock",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ruleAltList",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "labeledAlt",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ruleBlock",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ruleAltList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ruleModifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ruleModifiers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ruleModifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "rulePrequel",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "optionsSpec",
+          "named": true
+        },
+        {
+          "type": "ruleAction",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ruleReturns",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "argActionBlock",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ruleSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "lexerRuleSpec",
+          "named": true
+        },
+        {
+          "type": "parserRuleSpec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ruleref",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "RULE_REF",
+          "named": true
+        },
+        {
+          "type": "argActionBlock",
+          "named": true
+        },
+        {
+          "type": "elementOptions",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "rules",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ruleSpec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setElement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "LEXER_CHAR_SET",
+          "named": true
+        },
+        {
+          "type": "STRING_LITERAL",
+          "named": true
+        },
+        {
+          "type": "TOKEN_REF",
+          "named": true
+        },
+        {
+          "type": "characterRange",
+          "named": true
+        },
+        {
+          "type": "elementOptions",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "grammarSpec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "terminalDef",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "STRING_LITERAL",
+          "named": true
+        },
+        {
+          "type": "TOKEN_REF",
+          "named": true
+        },
+        {
+          "type": "elementOptions",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "throwsSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "qualifiedIdentifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tokensSpec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "idList",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "wildcard",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "elementOptions",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "+=",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "->",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "..",
+    "named": false
+  },
+  {
+    "type": "0",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "?",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "BacktickQuoteLiteral",
+    "named": true
+  },
+  {
+    "type": "DoubleQuoteLiteral",
+    "named": true
+  },
+  {
+    "type": "LEXER_CHAR_SET",
+    "named": true
+  },
+  {
+    "type": "RULE_REF",
+    "named": true
+  },
+  {
+    "type": "STRING_LITERAL",
+    "named": true
+  },
+  {
+    "type": "TOKEN_REF",
+    "named": true
+  },
+  {
+    "type": "TripleQuoteLiteral",
+    "named": true
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "\\",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "block_comment",
+    "named": true
+  },
+  {
+    "type": "catch",
+    "named": false
+  },
+  {
+    "type": "channels",
+    "named": false
+  },
+  {
+    "type": "doc_comment",
+    "named": true
+  },
+  {
+    "type": "finally",
+    "named": false
+  },
+  {
+    "type": "fragment",
+    "named": false
+  },
+  {
+    "type": "grammar",
+    "named": false
+  },
+  {
+    "type": "import",
+    "named": false
+  },
+  {
+    "type": "lexer",
+    "named": false
+  },
+  {
+    "type": "line_comment",
+    "named": true
+  },
+  {
+    "type": "locals",
+    "named": false
+  },
+  {
+    "type": "mode",
+    "named": false
+  },
+  {
+    "type": "options",
+    "named": false
+  },
+  {
+    "type": "parser",
+    "named": false
+  },
+  {
+    "type": "private",
+    "named": false
+  },
+  {
+    "type": "protected",
+    "named": false
+  },
+  {
+    "type": "public",
+    "named": false
+  },
+  {
+    "type": "returns",
+    "named": false
+  },
+  {
+    "type": "throws",
+    "named": false
+  },
+  {
+    "type": "tokens",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]
